@@ -1,25 +1,32 @@
 body{
-    background: white;
+    background: #264653;
     font-family:Arial, Helvetica, sans-serif;
 }
 h1{
-    color: black;
+    color: #E9C46A;
     text-align:center;
 }
 
 .assignments {
-    background:lightgray;
+    background:#E76F51;
     display:flex;
     padding:10px;
     margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 10px #E9C46A;
 }
 
 .assignments img{
     width: 200px;
-    border: 2px solid black;
+    border: 2px solid #E9C46A;
+    border-radius: 5px;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #264653;
+}
+
+p {
+    color: #264653;
 }
