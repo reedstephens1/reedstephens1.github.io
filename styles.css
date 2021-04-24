@@ -2,17 +2,16 @@ body{
     background: #264653;
     font-family:Arial, Helvetica, sans-serif;
 }
-.assignments{
-    display:flex;
-    flex-wrap:wrap;
-}
 h1{
     color: #E9C46A;
     text-align:center;
 }
 
-.assignment {
-    width: 30%;
+h3{
+    color: #264653;
+    text-align:center;
+}
+.tab-content {
     background:#E76F51;
     padding:10px;
     margin: 10px;
@@ -20,14 +19,15 @@ h1{
     box-shadow: 5px 10px #E9C46A;
 }
 
-.assignment img{
-    width: 200px;
-    height: 200px;
-    border: 2px solid #E9C46A;
-    border-radius: 5px;
-    margin-right: 5px;
-}
 
+.intro {
+        width: 100%;
+        background:#E76F51;
+        padding:10px;
+        margin: 10px;
+        border-radius: 5px;
+        box-shadow: 5px 10px #E9C46A;
+}
 a {
     text-decoration: none;
     color: #264653;
@@ -35,4 +35,39 @@ a {
 
 p {
     color: #264653;
+}
+[data-tab-content] {
+    display: none;
+}
+.active[data-tab-content] {
+   display: block; 
+}
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 10px #E9C46A;
+    background:#E76F51;
+    flex-wrap:wrap;
+}
+.tab{
+    cursor: pointer;
+    padding: 10px;
+}
+.tab:hover{
+    background-color: #E9C46A;
+}
+.tab.active{
+    background-color: #E9C46A;;
+}
+.li{
+    text-decoration: none;
+    color: #264653;
+}
+.tab-content  {
+    margin-left: 20px;
+    margin-right: 20px;
 }
